@@ -3,3 +3,5 @@
 
 const emailList = document.getElementById('email-list'); //collego js all'elemento html in cui vorrei salvare la lista di email
                                                                   
+function generateEmails() {//creo una funzione per ottenere 10 email
+    
