@@ -25,6 +25,8 @@ function generateEmails() { ////creo una funzione per ottenere 10 email
         });
     }
     
-   
+    generateEmails();
+    
+    
     
     
