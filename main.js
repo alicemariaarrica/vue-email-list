@@ -16,4 +16,15 @@ function generateEmails() { ////creo una funzione per ottenere 10 email
                 
                 const listItem = document.createElement('li'); //sto creando un elemento <li></li> in html, ora è solo in memoria però
                 listItem.textContent = email; //imposto il testo all'interno del nuovo elemento <li>, che in questo caso sarà l'email che ho ottenuto dall'API
-
+                
+                document.getElementById('email-list').appendChild(listItem); //inserisco il nuovo elemento <li> nella lista <ul> per ogni iterazione
+            })
+        
+        .catch(error => {
+            console.error('Errore nella richiesta:', error);
+        });
+    }
+    
+   
+    
+    
