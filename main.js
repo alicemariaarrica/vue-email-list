@@ -13,3 +13,7 @@ function generateEmails() { ////creo una funzione per ottenere 10 email
                 const email = response.data.response; //// creo una variabile in cui salvare l'email dalla risposta dell'API 
                 //che cambia ad ogni iterazione
 
+                
+                const listItem = document.createElement('li'); //sto creando un elemento <li></li> in html, ora è solo in memoria però
+                listItem.textContent = email; //imposto il testo all'interno del nuovo elemento <li>, che in questo caso sarà l'email che ho ottenuto dall'API
+
